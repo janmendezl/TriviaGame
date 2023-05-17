@@ -14,7 +14,7 @@ const databaseAndQuestionCollection = {db: process.env.MONGO_DB_NAME, collection
 const databaseAndUserInfoCollection = {db: process.env.MONGO_DB_NAME, collection: process.env.MONGO_COLLECTION_USERINFO};
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
-const uri = `mongodb+srv://${userName}:${password}@cluster0.c6wejbx.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${userName}:${password}@cluster0.s3ockcc.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 let triviaToken;
 fetch('https://opentdb.com/api_token.php?command=request')
@@ -387,5 +387,6 @@ function localDataSummaryTable() {
     table += "</table>"
     return table;
 }
+
 
 app.listen(portNumber);
