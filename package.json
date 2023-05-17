@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "name": "final",
   "version": "1.0.0",
   "description": "",
@@ -18,7 +17,6 @@
     "fs": "^0.0.1-security",
     "latest": "^0.2.0",
     "mongodb": "^5.4.0",
-    "node-fetch": "^3.3.1",
     "path": "^0.12.7"
   }
 }
