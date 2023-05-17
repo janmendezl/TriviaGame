@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Trivia Game</title>
+        <link href="trivia.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+
+<body id="indexPage">
+        <img src="https://cdn-icons-png.flaticon.com/512/3524/3524335.png" style= "height: 100px">
+        <h1 id="welcomeFont">Welcome to Trivia!</h1>
+	<div>
+                <form action="/" method="post">
+                        <label for="username">Username: </label>
+                        <input type="text" id="username" name="username"></input> 
+                        <br><br>
+                        <input type="submit" value="Play" id="play">
+                </form>
+	</div>
+
+        <hr>
+
+        </div id="accessScores">
+                To find a user's score:
+                <button onclick="window.location.href='/accessScores';">
+                        Click Here
+                </button>
+        </div>
+</body>
+
+</html>

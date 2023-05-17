@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Summary</title>
+	<link rel="stylesheet" href="trivia.css">
+</head>
+
+<body id="summary">
+	<h1>Summary:</h1>
+	<div id="summaryTable">
+        <%- summaryTable %>
+	</div>
+	<br>
+	<div id="totalScore">
+		Correct Answers: 
+		<%- totalScore %> / 5
+	</div>
+	<br>
+    <form action="/summary" method="post">
+        <input type="submit" value="Home" id="ques2">
+		<br> <br> <br>
+	</form>
+</body>
+
+</html>

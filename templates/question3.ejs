@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Question</title>
+    <link href="trivia.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="questionbody">
+	<h1>Question 3:</h1>
+	<div id="question">
+        <%- question %>
+        <br> <br>
+	</div>
+    <div id="choices">
+        <form action="/question3" method="post">
+        <%- choices %>
+        <input type="submit" id="ques">
+        </form>
+    </div>
+</body>
+
+</html>
